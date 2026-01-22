@@ -1,0 +1,52 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "tui": {
+    "scroll_speed": 3,
+    "scroll_acceleration": {
+      "enabled": true
+    },
+    "diff_style": "auto"
+  },
+  "theme": "catppuccin",
+  "default_agent": "build",
+  "mcp": {},
+  "plugin": [],
+  "tools": {
+    "bash": true,
+    "edit": true,
+    "write": true,
+    "read": true,
+    "grep": true,
+    "glob": true,
+    "list": true,
+    "lsp": true,
+    "patch": true,
+    "skill": true,
+    "todowrite": true,
+    "todoread": true,
+    "webfetch": true,
+    "question": true,
+    "project": true
+  },
+  "permission": {
+    "bash": "ask",
+    "edit": "ask",
+    "write": "ask",
+    "read": "allow",
+    "grep": "allow",
+    "glob": "allow",
+    "list": "allow",
+    "lsp": "allow",
+    "patch": "ask",
+    "skill": "allow",
+    "todowrite": "allow",
+    "todoread": "allow",
+    "webfetch": "allow",
+    "question": "allow",
+    "project": "allow"
+  },
+  "compaction": {
+    "auto": true,
+    "prune": true
+  }
+}
