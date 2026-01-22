@@ -9,6 +9,7 @@
   },
   "theme": "catppuccin",
   "default_agent": "build",
+  "instructions": ["docs/guidelines.md"],
   "mcp": {},
   "plugin": [],
   "tools": {
