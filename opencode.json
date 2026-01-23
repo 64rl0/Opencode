@@ -10,25 +10,27 @@
   "theme": "catppuccin",
   "default_agent": "build",
   "instructions": ["docs/guidelines.md"],
-  "mcp": {},
+  "mcp": {
+    "context7": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "{env:CARLOGTT_SECRET_CONTEXT7_API_KEY}"
+      }
+    },
+    "github": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer {env:GH_TOKEN}"
+      }
+    }
+  },
   "plugin": [],
   "tools": {
-    "bash": true,
-    "edit": true,
-    "write": true,
-    "read": true,
-    "grep": true,
-    "glob": true,
-    "list": true,
-    "lsp": true,
-    "patch": true,
-    "skill": true,
-    "todowrite": true,
-    "todoread": true,
-    "webfetch": true,
-    "websearch": true,
-    "question": true,
-    "project": true
+    "*": true,
   },
   "permission": {
     "bash": {
@@ -40,20 +42,29 @@
       "cat *": "allow",
       "find *": "allow"
     },
-    "edit": "ask",
-    "write": "ask",
-    "read": "allow",
     "grep": "allow",
     "glob": "allow",
     "list": "allow",
-    "lsp": "allow",
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "edit": "ask",
+    "write": "ask",
     "patch": "ask",
+    "task": "allow",
     "skill": "allow",
+    "lsp": "allow",
     "todowrite": "allow",
     "todoread": "allow",
     "webfetch": "allow",
     "websearch": "allow",
+    "codesearch": "allow",
     "question": "allow",
+    "external_directory": "ask",
+    "doom_loop": "ask",
     "project": "allow"
   },
   "compaction": {
