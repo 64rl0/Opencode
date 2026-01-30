@@ -9,7 +9,7 @@
   },
   "theme": "catppuccin",
   "default_agent": "build",
-  "instructions": ["docs/guidelines.md"],
+  "instructions": ["rules/guidelines.md"],
   "mcp": {
     "context7": {
       "enabled": true,
@@ -63,7 +63,10 @@
     "websearch": "allow",
     "codesearch": "allow",
     "question": "allow",
-    "external_directory": "ask",
+    "external_directory": {
+      "*": "ask",
+      "$HOME/.config/opencode/**": "allow"
+    },
     "doom_loop": "ask",
     "project": "allow"
   },
