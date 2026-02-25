@@ -10,6 +10,14 @@
   "theme": "catppuccin",
   "default_agent": "build",
   "instructions": ["rules/guidelines.md"],
+  "provider": {
+    "amazon-bedrock": {
+      "options": {
+        "region": "us-east-1",
+        "profile": "carlogtt-conduit-dev"
+      }
+    }
+  },
   "mcp": {
     "context7": {
       "enabled": true,
