@@ -12,5 +12,5 @@ Instructions:
 
 ## General Guidelines
 
-Read the following file immediately as it's relevant to all workflows: @rules/guidelines.md.
+Read the following file immediately as it's relevant to all workflows: ~/.config/opencode/rules/guidelines.md.
 
