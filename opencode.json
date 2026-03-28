@@ -71,7 +71,7 @@
     "project": "allow"
   },
   "compaction": {
-    "auto": true,
-    "prune": true
+    "auto": false,
+    "prune": false
   }
 }
