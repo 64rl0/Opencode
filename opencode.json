@@ -26,6 +26,11 @@
       "headers": {
         "Authorization": "Bearer {env:GH_TOKEN}"
       }
+    },
+    "firecrawl": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.firecrawl.dev/{env:CARLOGTT_SECRET_FIRECRAWL_API_KEY}/v2/mcp"
     }
   },
   "plugin": [],
