@@ -70,7 +70,8 @@
     "question": "allow",
     "external_directory": {
       "*": "ask",
-      "$HOME/.config/opencode/**": "allow"
+      "$HOME/.config/opencode/**": "allow",
+      "$HOME/.config/opencode/*/**": "allow"
     },
     "doom_loop": "ask",
     "project": "allow"
@@ -78,5 +79,6 @@
   "compaction": {
     "auto": false,
     "prune": false
-  }
+  },
+  "share": "disabled"
 }
